@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="main_page.css">
+
+    </head>
+    <body>
+        <div class="web_page">
+            <div class="head_side">
+                <div class="perso">
+                    <div class="name">Jayanth Gorrepati</div>
+                    <div class="prof">Front End Developer</div>
+                    <div class="desc" style="font-size: 15px;">Eager to Learn & Contribute in organization, with help of my skills, HTML, CSS, JS</div>
+                </div>
+                
+                <div class="btn_sec">   
+                    <div class="about_btn" id="about_id">
+                        <canvas id="btn_line1" width="50px" height="25px">
+                        </canvas>
+                        <script>
+                            let c1=document.getElementById("btn_line1");
+                            let ctx=c1.getContext('2d');
+
+                            let endX=50;
+
+                            function line(con){
+                                con.beginPath();
+                                con.moveTo(0,12.5);
+                                con.lineTo(endX, 12.5);
+                                con.strokeStyle='white';    
+                                con.stroke(); 
+                            }
+                            line(ctx);
+                        </script> 
+                        <button class="about" onclick="scrollToSection('about_sec')">ABOUT</button>
+                    <script>
+                        let btn1=document.getElementById("about_id");
+                        
+                        btn1.addEventListener("mouseenter",()=>{
+                            endX=65;
+                            c1.width=65;
+                            line(ctx)
+                        })
+                        btn1.addEventListener("mouseleave",()=>{
+                            endX=50;
+                            c1.width=50;
+                            line(ctx);
+                        })
+                    </script>
+
+                    </div>
+                    
+                    <div class="exp_btn" id="exp_id">
+                        <canvas id="btn_line2" width="50px" height="25px">
+                        </canvas>
+                        <script>
+                            let c2=document.getElementById("btn_line2");
+                            let ctx2=c2.getContext('2d');   
+                            line(ctx2);
+                        </script>
+                        <button class="exp" onclick="scrollToSection('exp_sec')">EXPERIANCE</button>
+                    </div>
+                    <script>
+                        let btn2=document.getElementById("exp_id");
+                        
+                        btn2.addEventListener("mouseenter",()=>{
+                            endX=65;
+                            c2.width=65;
+                            line(ctx2)
+                        })
+                        btn2.addEventListener("mouseleave",()=>{
+                            endX=50;
+                            c2.width=50;
+                            line(ctx2);
+                        })
+                    </script>
+
+                    <div class="proj_btn" id="proj_id">
+                        <canvas id="btn_line3" width="50px" height="25px">
+                        </canvas>
+                        <script>
+                            let c3=document.getElementById("btn_line3");
+                            let ctx3=c3.getContext('2d');
+                            line(ctx3);
+                        </script>
+                        <button class="proj" onclick="scrollToSection('proj_sec')">PROJECTS</button>
+                    </div>
+                    <script>
+                        let btn3=document.getElementById("proj_id");
+                        
+                        btn3.addEventListener("mouseenter",()=>{
+                            endX=65;
+                            c3.width=65;
+                            line(ctx3)
+                        })
+                        btn3.addEventListener("mouseleave",()=>{
+                            endX=50;
+                            c3.width=50;
+                            line(ctx3);
+                        })
+                    </script>
+                    <script>
+                        function scrollToSection(sectionId) {
+                            document.getElementById(sectionId).scrollIntoView({
+                            behavior: 'smooth'
+                            });
+                            }
+                    </script>
+                </div>
+
+                <div class="contact_bar">
+                    <a href="https://github.com/jayanthg-14">
+                        <button class="social-btn">
+                         <i id="git_id" style="font-size: 25px;" class="fa fa-github"></i>
+                         </button>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/jayant-g/">
+                        <button>
+                         <i id="linkedin_id" style="font-size: 25px;" class="fa fa-linkedin-square"></i>
+                         </button>
+                    </a>
+
+                    <a href="https://www.instagram.com/g._.jayanth">
+                        <button>
+                         <i id="linkedin_id" style="font-size: 25px;" class="fa fa-instagram"></i>
+                         </button>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="contents_side">
+                
+                <div class="about_sec" id="about_sec">
+                    <div class="content about1">
+                            I'm a passionate <span>Front-end Developer</span> focused on creating intuitive, detail-oriented user interfaces that combine thoughtful design with clean code. My strongest work emerges from the intersection of technical implementation and user experience, building web applications that prioritize both visual appeal and functional excellence.
+                            <br>
+                            <br>
+                            Currently, I'm focused on front-end development with expertise in <span>HTML, CSS, JavaScript, and Bootstrap framework</span>. I bring a meticulous approach to every project, ensuring pixel-perfect implementations that meet modern web standards. My technical foundation extends to data structures, algorithms, and Python programming, complemented by certifications in Java full-stack development.
+                            <br><br>
+                            My interest in technology began in childhood through early exposure to computing, which cultivated my natural problem-solving abilities and attention to detail. This foundation has evolved into a focused pursuit of user interface design, where I can leverage both creative vision and technical precision to craft exceptional digital experiences.
+                            <br><br>
+                            I'm actively expanding my skill set through <span>Full-stack Development</span> studies and exploring <span>AI tools</span> to enhance development workflows. Through hands-on project work, I continuously refine my abilities while building practical applications that demonstrate my commitment to quality and innovation.
+                            <br><br>
+
+                            In my spare time, I enjoy exploring new technologies, working on personal coding projects, and staying current with design trends that shape the future of web development.
+                    </div> 
+                </div>
+
+                
+                <div class="exp_sec" id="exp_sec">
+                    <div class="content exp1">
+
+                        <span class="h1">NSS Unit Leader | Jagarlamudi Kuppuswamy Choudary College</span><br>
+                        <span class="h2">| 2022 - 2025 |</span><br>
+                        <br>
+                        Successfully led a student group within the National Service Scheme unit, demonstrating leadership and organizational excellence over three years. Applied systematic <span>database management and documentation</span> processes while maintaining comprehensive member information including personal details, contact information, and emergency data for the entire unit. Developed problem-solving methodologies and implemented structured information systems that enabled rapid <span>emergency coordination</span> during urgent situations, particularly for blood group identification and member contact networking.
+                        <br><br>
+                        Coordinated multiple community service initiatives including <span>plantion programs</span> where the unit successfully planted over 250 plants during various campus and community events. Utilized effective communication and operational management while leading <span>waste collection</span> drives, campus cleaning campaigns, and sustainability projects across the college. Applied leadership principles and workflow coordination during <span>awareness rallies</span> and community outreach activities that ensured maximum public engagement. This experience developed essential competencies in strategic planning, organizational management, stakeholder relations, and project execution that directly support collaborative work environments and professional project requirements.
+                        <br><br>
+                    </div>
+                    <div class="content exp2" style="margin-top: 50px;">
+                        
+                        <span class="h1">Career Skills Development Intern | Hunars Organization</span>
+                        <br>
+                        <span class="h2">| June - July 2020 |</span><br>
+                        <br>
+                        Pursued comprehensive career skills development internship focused on professional growth and employability enhancement. Enhanced professional communication and presentation capabilities through collaborative project work on <span>3D ARM Based Robot</span>. Developed strategic career planning skills by participating in expert-led seminars and <span>goal-setting workshops</span>. Cultivated <span>virtual collaboration</span> proficiency while coordinating with distributed team members across <span>digital platforms</span>. Strengthened analytical thinking and research methodology through systematic project execution. Built comprehensive <span>documentation and reporting</span> skills by synthesizing technical findings into professional presentations. Demonstrated adaptability and <span>time management</span> by successfully delivering project deliverables within established timelines, earning certification through evaluation excellence.
+                    </div>
+                </div>
+                                    
+                                        
+                <div class="proj_sec" id="proj_sec">
+                    <div class="content proj1" style="margin-bottom: 200px;">
+                        <span class="h1">Personal Portfolio Website</span><br><br>Building this portfolio website was an exciting journey where I got to showcase my technical skills while creating something truly personal. I developed the entire site from scratch using <span>HTML5, CSS3</span>, and <span>vanilla JavaScript</span>, which gave me complete control over every detail. The most challenging and rewarding part was implementing the interactive <span>Canvas API animations</span> for the navigation - those smooth line extensions on hover took some creative <span>problem-solving</span>, but the end result feels really polished and engaging.
+                        <br>
+                        <br>
+                        What I'm most proud of is how I combined my technical abilities with thoughtful design choices to create a user experience that actually feels good to navigate. The split-screen layout with smooth scrolling, the carefully chosen dark theme, and the responsive <span>Flexbox positioning</span> all work together to tell my story as a developer. Through this project, I demonstrated my skills in <span>DOM manipulation, event handling</span>, and creating clean, organized code architecture. It's more than just a portfolio - it's proof that I can take an idea from concept to completion while maintaining professional web standards and creating something that genuinely represents who I am as a developer.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
